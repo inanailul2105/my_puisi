@@ -35,8 +35,6 @@ const Main = () => {
 
     const shortLines = lines.filter((line) => line.length < 10);
 
-    console.log("lines >>", lines);
-
     if (shortLines.length > 0) {
       setResponse(
         `<p class="wrong" >Beberapa baris terlalu pendek (minimal 10 karakter per baris). Harap periksa kembali.</p>`
