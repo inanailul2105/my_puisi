@@ -1,5 +1,5 @@
 import axios from "axios";
-import { REACT_APP_OPENAI_API_KEY } from "../../contants";
+import { OPENAI_API_KEY } from "../../contants";
 
 export async function fetchChatCompletion(prompt: string) {
   try {
@@ -11,7 +11,7 @@ export async function fetchChatCompletion(prompt: string) {
       },
       {
         headers: {
-          Authorization: `Bearer ${REACT_APP_OPENAI_API_KEY}`,
+          Authorization: `Bearer ${OPENAI_API_KEY}`,
           "Content-Type": "application/json",
         },
       }

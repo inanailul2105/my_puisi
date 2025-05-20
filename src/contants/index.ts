@@ -1,2 +1,2 @@
-export const REACT_APP_OPENAI_API_KEY =
-  "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";
+export const OPENAI_API_KEY =
+  "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";
